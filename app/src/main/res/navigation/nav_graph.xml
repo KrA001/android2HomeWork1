@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/firstFragment2">
+
+    <fragment
+        android:id="@+id/firstFragment2"
+        android:name="com.example.android2homework1.FirstFragment"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_first" >
+        <action
+            android:id="@+id/action_firstFragment2_to_seconFragment"
+            app:destination="@id/seconFragment" />
+        <action
+            android:id="@+id/action_firstFragment2_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/seconFragment"
+        android:name="com.example.android2homework1.SeconFragment"
+        android:label="fragment_secon"
+        tools:layout="@layout/fragment_secon" >
+        <action
+            android:id="@+id/action_seconFragment_to_thirdFragment2"
+            app:destination="@id/thirdFragment2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/thirdFragment2"
+        android:name="com.example.android2homework1.ThirdFragment"
+        android:label="fragment_third"
+        tools:layout="@layout/fragment_third" />
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.android2homework1.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" />
+</navigation>
